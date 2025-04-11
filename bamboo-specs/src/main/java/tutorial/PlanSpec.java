@@ -51,9 +51,9 @@ public class PlanSpec {
                             .tasks(new VcsCheckoutTask()
                                     .description("Checkout Default Repository")
                                     .checkoutItems(new CheckoutItem().defaultRepository()))))
-            .linkedRepositories("specsBB")
+            .linkedRepositories("githubspecs")
             
-            .triggers(new BitbucketServerTrigger())
+
             .planBranchManagement(new PlanBranchManagement()
                     .createForVcsBranch()
                     .delete(new BranchCleanup()
