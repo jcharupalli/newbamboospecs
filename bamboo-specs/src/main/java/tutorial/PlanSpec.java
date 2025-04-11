@@ -83,7 +83,7 @@ public class PlanSpec {
                             .artifacts(new DownloadItem()
                                     .allArtifacts(true)),
                         new ScriptTask()
-                            .inlineBody("ls"))
+                            .inlineBody("pwd"))
                     .triggers(new AfterSuccessfulBuildPlanTrigger()));
         return rootObject;
     }
